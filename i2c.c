@@ -28,11 +28,8 @@ int8_t i2c_init(void)
 	/* Deinit I2C */
 	I2C_DeInit(I2C1);
 	
-	GPIO_Init(GPIOE, GPIO_Pin_6, GPIO_Mode_Out_PP_High_Slow);
-	GPIO_SetBits(GPIOE, GPIO_Pin_6);
-	
-  /* Initialize I2C peripheral */
-  I2C_Init(I2C1, 100000, 0xA1,
+  	/* Initialize I2C peripheral */
+  	I2C_Init(I2C1, 100000, 0xA1,
            I2C_Mode_I2C, I2C_DutyCycle_2,
            I2C_Ack_Enable, I2C_AcknowledgedAddress_7bit);
 					 
