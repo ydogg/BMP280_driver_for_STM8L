@@ -23,11 +23,11 @@ i2c.h ->
  
     int main(void)
     {
-    	// system_clock 
+      // system_clock 
       CLK_SYSCLKDivConfig(CLK_SYSCLKDiv_1);
     	
-    	// I2C init
-    	i2c_init();
+      // I2C init
+      i2c_init();
     	
     	// Open enableInterrupts
       enableInterrupts();
